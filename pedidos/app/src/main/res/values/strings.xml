@@ -2,7 +2,7 @@
     <string name="app_name">pedidos</string>
 
     <string name="titulo_pedidos">PEDIDOS</string>
-    <string name="hint_producto">Escribe el nombre del producto</string>
+    <string name="hint_producto">Nombre del producto</string>
     <string name="boton_buscar">BUSCAR</string>
     <string name="boton_aceptar">Aceptar</string>
 
