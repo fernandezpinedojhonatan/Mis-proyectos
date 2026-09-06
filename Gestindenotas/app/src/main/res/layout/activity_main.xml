@@ -1,19 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/backgroundGray"
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- TITULO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_sistema"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- NOMBRE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_nombre"
+            android:textSize="14sp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@color/cardBackground"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- PP1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_pp1"
+            android:textSize="14sp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etPp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@color/cardBackground"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- PP2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_pp2"
+            android:textSize="14sp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etPp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@color/cardBackground"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- PP3 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_pp3"
+            android:textSize="14sp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etPp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@color/cardBackground"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- BOTONES ORDEN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnOrdenarAlfabetico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_ordenar_alfabetico"
+                android:backgroundTint="@color/colorSuccess"
+                android:textColor="@color/white"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnOrdenarNumerico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_ordenar_numerico"
+                android:backgroundTint="@color/colorWarning"
+                android:textColor="@color/white"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- BOTON GUARDAR -->
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_guardar"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:padding="12dp"/>
+
+        <!-- BOTON LIMPIAR -->
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_limpiar"
+            android:backgroundTint="@color/colorDanger"
+            android:textColor="@color/white"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"/>
+
+        <!-- AREA DE INFORMACION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/cardBackground"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INFORMACION"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_esperando"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@color/textPrimary"
+                android:padding="8dp"
+                android:minHeight="80dp"/>
+        </LinearLayout>
+
+        <!-- TITULO LISTA -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_lista"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- CONTENEDOR LISTA -->
+        <LinearLayout
+            android:id="@+id/llListaEstudiantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/cardBackground"
+            android:padding="8dp"
+            android:minHeight="100dp">
+
+            <TextView
+                android:id="@+id/tvMensajeLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_sin_estudiantes"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@color/textSecondary"
+                android:padding="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

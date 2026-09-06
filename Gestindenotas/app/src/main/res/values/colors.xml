@@ -8,12 +8,19 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!-- Colores de la app -->
     <color name="colorPrimary">#2196F3</color>
     <color name="colorPrimaryDark">#1976D2</color>
     <color name="colorSuccess">#4CAF50</color>
     <color name="colorWarning">#FF9800</color>
     <color name="colorDanger">#F44336</color>
     <color name="backgroundGray">#F5F5F5</color>
+    <color name="cardBackground">#FFFFFF</color>
     <color name="textPrimary">#333333</color>
     <color name="textSecondary">#666666</color>
+
+    <!-- Colores para estados de notas -->
+    <color name="greenDark">#388E3C</color>
+    <color name="orangeDark">#F57C00</color>
+    <color name="redDark">#D32F2F</color>
 </resources>
