@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">pedidos</string>
+
+    <string name="titulo_pedidos">PEDIDOS</string>
+    <string name="hint_producto">Escribe el nombre del producto</string>
+    <string name="boton_buscar">BUSCAR</string>
+    <string name="boton_aceptar">Aceptar</string>
+
+    <string name="error_titulo">Error</string>
+    <string name="error_campo_vacio">Por favor escribe productos</string>
+    <string name="producto_encontrado_titulo">Producto encontrado</string>
+
+</resources>
