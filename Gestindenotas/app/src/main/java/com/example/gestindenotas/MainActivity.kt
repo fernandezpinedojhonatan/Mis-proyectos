@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
     private val listaEstudiantes = mutableListOf<Estudiante>()
     private val df = DecimalFormat("#.##")
 
-    // ✅ CLASE ESTUDIANTE CORRECTA
     data class Estudiante(
         val nombre: String,
         val pp1: Double,
@@ -36,7 +35,6 @@ class MainActivity : AppCompatActivity() {
     ) {
         fun getPromedio(): Double = (pp1 + pp2 + pp3) / 3
 
-        // ✅ FUNCIÓN CORRECTA (SIN "resld = ")
         fun getEstado(): String {
             val promedio = getPromedio()
             return when {

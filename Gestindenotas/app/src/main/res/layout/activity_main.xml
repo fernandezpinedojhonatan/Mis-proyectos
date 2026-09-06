@@ -11,7 +11,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- TITULO -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,7 +21,6 @@
             android:textColor="@color/colorPrimary"
             android:layout_marginBottom="20dp"/>
 
-        <!-- NOMBRE -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,7 +38,6 @@
             android:background="@color/cardBackground"
             android:layout_marginBottom="12dp"/>
 
-        <!-- PP1 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,7 +55,6 @@
             android:background="@color/cardBackground"
             android:layout_marginBottom="12dp"/>
 
-        <!-- PP2 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,7 +72,6 @@
             android:background="@color/cardBackground"
             android:layout_marginBottom="12dp"/>
 
-        <!-- PP3 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -94,7 +89,6 @@
             android:background="@color/cardBackground"
             android:layout_marginBottom="12dp"/>
 
-        <!-- BOTONES ORDEN -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -123,7 +117,6 @@
                 android:layout_marginStart="4dp"/>
         </LinearLayout>
 
-        <!-- BOTON GUARDAR -->
         <Button
             android:id="@+id/btnGuardar"
             android:layout_width="match_parent"
@@ -134,7 +127,6 @@
             android:textSize="16sp"
             android:padding="12dp"/>
 
-        <!-- BOTON LIMPIAR -->
         <Button
             android:id="@+id/btnLimpiar"
             android:layout_width="match_parent"
@@ -145,7 +137,6 @@
             android:layout_marginTop="4dp"
             android:padding="8dp"/>
 
-        <!-- AREA DE INFORMACION -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -175,7 +166,7 @@
                 android:minHeight="80dp"/>
         </LinearLayout>
 
-        <!-- TITULO LISTA -->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -186,7 +177,6 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"/>
 
-        <!-- CONTENEDOR LISTA -->
         <LinearLayout
             android:id="@+id/llListaEstudiantes"
             android:layout_width="match_parent"
