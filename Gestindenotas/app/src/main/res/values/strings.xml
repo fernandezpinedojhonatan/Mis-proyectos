@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">Gestión de notas</string>
+    <string name="app_name">Sistema de Notas</string>
+
+    <string name="title_sistema">SISTEMA DE NOTAS</string>
+    <string name="title_lista">LISTA DE ESTUDIANTES</string>
+
+    <string name="label_nombre">Nombre</string>
+    <string name="label_pp1">Nota PP1</string>
+    <string name="label_pp2">Nota PP2</string>
+    <string name="label_pp3">Nota PP3</string>
+
+    <string name="btn_guardar">GUARDAR</string>
+    <string name="btn_ordenar_alfabetico">Orden Alfabetico</string>
+    <string name="btn_ordenar_numerico">Orden Numerico</string>
+    <string name="btn_limpiar">Limpiar</string>
+
+    <string name="estado_aprobado">APROBADO</string>
+    <string name="estado_sustitutorio">SUSTITUTORIO</string>
+    <string name="estado_desaprobado">DESAPROBADO</string>
+
+    <string name="msg_esperando">Esperando datos...</string>
+    <string name="msg_sin_estudiantes">No hay estudiantes</string>
+    <string name="msg_ordenado_alfabetico">Ordenado alfabeticamente</string>
+    <string name="msg_ordenado_numerico">Ordenado numericamente</string>
+
+    <string name="alert_titulo_error">Error</string>
+    <string name="alert_titulo_info">Informacion</string>
+    <string name="alert_mensaje_vacio">Ingrese nombre y todas las notas</string>
+    <string name="alert_mensaje_nota_invalida">Notas entre 0 y 20</string>
+    <string name="alert_mensaje_numero_invalido">Ingrese valores numericos</string>
+    <string name="alert_mensaje_sin_datos">No hay estudiantes</string>
+    <string name="alert_boton_aceptar">Aceptar</string>
 </resources>
